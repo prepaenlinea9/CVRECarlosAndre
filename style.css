@@ -1,0 +1,85 @@
+/* Cargar tu fuente para títulos */
+@font-face {
+    font-family: 'Square721BT';
+    src: url('assets/Square721BT-RomanExtended.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fuente para párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.7);
+      color: rgb(171, 1, 1);
+    text-decoration: none
+}
+
+header h1 {
+    font-family: 'Square721BT', sans-serif;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin: 0.2em 0;
+}
+
+header p {
+    margin: 0.2em 0;
+}
+
+/* Secciones con animación fade-in */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Títulos de secciones */
+h2, h3 {
+    font-family: 'Square721BT', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+      color: rgb(171, 1, 1);
+    text-decoration: none
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Hover effect para los ítems */
+li:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+footer a {
+    color: rgb(171, 1, 1);
+    text-decoration: none;
+}
